@@ -38,41 +38,6 @@
 @endsection
 
 @section('footer')
-  {{-- <script type="text/javascript">
-    setTimeout(function() {
-    $("#form").html('<table>'+
-                          '<tr>'+
-                            '<td>'+
-                              '<div class="input-control textarea full-size">'+
-                                  '<textarea id="input_komentar" type="text"></textarea>'+
-                              '</div>'+
-                            '</td>'+
-                          '</tr>'+
-                          '<tr>'+
-                            '<td>'+
-                              '<button class="button primary" onclick="send_comments()">Submit</button>'+
-                            '</td>'+
-                          '</tr>'+
-                      '</table>');
-    },1000);
-
-    function send_comments() {
-      $.ajax({
-        url:'{{ url("komentar") }}',
-        type:'POST',
-        data:{'idpost':{{ $data->isi }}, '_token':'{{csrf_token()}}',
-        isi:$('#input_komentar').val() },
-        success:function(argument) {
-          if(argument=="sukses") {
-            alert('sukses');
-          }
-        },
-        error:function() {
-          alert('error');
-        }
-      });
-    }
-  </script> --}}
   <script type="text/javascript">
 
   	setTimeout(function(){
